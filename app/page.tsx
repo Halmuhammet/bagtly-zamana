@@ -1,0 +1,23 @@
+import ProductList from "@/components/ProductList"
+import Header from "@/components/Header"
+import Footer from "@/components/Footer"
+import FullScreenVideo from "@/components/FullScreenVideo"
+import PageBreaker from "@/components/PageBreaker"
+
+export default function Home() {
+  return (
+    <div className="flex flex-col min-h-screen bg-white">
+      <Header />
+      <div className="relative w-full h-screen"> {/* Container for FullScreenVideo with fixed height */}
+        <FullScreenVideo />
+      </div>
+      <main className="flex-grow container mx-auto px-24">
+        <PageBreaker />
+        <div className="px-4 pb-16">
+          <ProductList />
+        </div>
+      </main>
+      <Footer />
+    </div>
+  )
+};
