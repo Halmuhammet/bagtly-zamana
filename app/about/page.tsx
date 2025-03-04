@@ -105,7 +105,7 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
-      <main className="flex-grow container mx-auto bg-white px-28 py-8 pt-32">
+      <main className="flex-grow container mx-auto bg-white px-4 sm:px-8 md:px-16 lg:px-28 py-8 pt-32">
         <h1 className="text-4xl font-bold mb-4 text-green-800 font-playfair">{translations[language].title}</h1>
         <p className="text-xl mb-8 text-green-600 italic">{translations[language].slogan}</p>
         <div className="prose max-w-none">

@@ -35,7 +35,7 @@ export default function Footer() {
   const { language } = useLanguage()
 
   return (
-    <footer id="contact" className="bg-green-800 text-white py-12 px-24">
+    <footer id="contact" className="bg-green-800 text-white py-12 px-4 sm:px-8 md:px-16 lg:px-24">
       <div className="container mx-auto px-4">
         <h2 className="text-3xl font-bold mb-6 font-playfair">{translations[language].contactUs}</h2>
         <p className="mb-2">

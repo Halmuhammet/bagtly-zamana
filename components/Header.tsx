@@ -78,7 +78,7 @@ export default function Header() {
                     {language.toUpperCase()}
                     <ChevronDown className="ml-1 h-5 w-5 text-green-600" />
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent>
+                  <DropdownMenuContent className="absolute left-24 transform -translate-x-full bg-white text-green-800 shadow-lg rounded-md z-[1000]">
                     <DropdownMenuItem onClick={() => setLanguage("en")}>English</DropdownMenuItem>
                     <DropdownMenuItem onClick={() => setLanguage("ru")}>Русский</DropdownMenuItem>
                     <DropdownMenuItem onClick={() => setLanguage("tm")}>Türkmençe</DropdownMenuItem>
@@ -150,11 +150,11 @@ export default function Header() {
                   {language.toUpperCase()}
                   <ChevronDown className="ml-2 h-5 w-5 text-green-600" />
                 </DropdownMenuTrigger>
-                <DropdownMenuContent>
-                  <DropdownMenuItem onClick={() => setLanguage("en")}>English</DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => setLanguage("ru")}>Русский</DropdownMenuItem>
-                  <DropdownMenuItem onClick={() => setLanguage("tm")}>Türkmençe</DropdownMenuItem>
-                </DropdownMenuContent>
+                <DropdownMenuContent className="absolute left-24 transform -translate-x-full bg-white text-green-800 shadow-lg rounded-md z-[1000]">
+                    <DropdownMenuItem onClick={() => setLanguage("en")}>English</DropdownMenuItem>
+                    <DropdownMenuItem onClick={() => setLanguage("ru")}>Русский</DropdownMenuItem>
+                    <DropdownMenuItem onClick={() => setLanguage("tm")}>Türkmençe</DropdownMenuItem>
+                  </DropdownMenuContent>
               </DropdownMenu>
             </li>
           </ul>
