@@ -129,7 +129,6 @@ export default function AboutPage() {
               <li key={index}>{item}</li>
             ))}
           </ul>
-          
         </div>
       </main>
       <Footer />

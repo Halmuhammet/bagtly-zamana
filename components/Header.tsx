@@ -119,10 +119,10 @@ export default function Header() {
           <ul className="space-y-4 text-md font-semibold p-6 text-green-600">
             <li>
               <Link
-                href="/"
+                href="/about"
                 className="block hover:text-green-600 transition-colors uppercase"
                 onClick={() => setIsMenuOpen(false)}
-              >
+              > 
                 {translations[language].about}
               </Link>
             </li>
