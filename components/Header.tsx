@@ -38,9 +38,9 @@ export default function Header() {
             <ul className="flex space-x-20 text-md tracking-wide">
               
               <li>
-                <Link href="#products" className="hover:text-green-600 transition-colors uppercase text-green-600 font-semibold">
+                <a href="/#products" className="hover:text-green-600 transition-colors uppercase font- text-green-600 font-semibold">
                   {translations[language].products}
-                </Link>
+                </a>
               </li>  
               
               <li>
@@ -55,7 +55,7 @@ export default function Header() {
           <div className="flex justify-center">
             <Link href="/" className="block w-24 h-24 relative">
               <Image
-                src="website_visuals/advertisement/logo 2.png"
+                src="website_visuals/advertisement/logo3.png"
                 alt="Bagtly Zamana Logo"
                 fill
                 className="object-contain"
@@ -127,13 +127,13 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link
-                href="#products"
+              <a
+                href="/#products"
                 className="block hover:text-green-600 transition-colors uppercase"
                 onClick={() => setIsMenuOpen(false)}
               >
                 {translations[language].products}
-              </Link>
+              </a>
             </li>
             <li>
               <Link

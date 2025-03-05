@@ -43,3 +43,10 @@ html {
 /* html {
   overflow-y: scroll;
 } */
+.custom-outline {
+  text-shadow: 
+    -1px -1px 0 #166534,  
+     1px -1px 0 #166534,  
+    -1px  1px 0 #166534,  
+     1px  1px 0 #166534;
+}

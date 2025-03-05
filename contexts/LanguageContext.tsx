@@ -13,20 +13,24 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<Language>("en");
+  const [language, setLanguage] = useState<Language>("ru");
 
-  // Using useEffect to ensure localStorage is accessed only on the client
   useEffect(() => {
-    const storedLanguage = localStorage.getItem("language") as Language;
-    if (storedLanguage) {
-      setLanguage(storedLanguage);
+    try {
+      const storedLanguage = localStorage.getItem("language") as Language;
+      if (storedLanguage) {
+        setLanguage(storedLanguage);
+      }
+    } catch (error) {
+      console.warn("Unable to access localStorage. Falling back to default language.", error);
     }
   }, []);
 
   useEffect(() => {
-    // Store the language in localStorage whenever it changes
-    if (language) {
+    try {
       localStorage.setItem("language", language);
+    } catch (error) {
+      console.warn("Unable to store language preference in localStorage.", error);
     }
   }, [language]);
 

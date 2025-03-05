@@ -8,10 +8,8 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <Header />
-      <div className="relative w-full h-screen"> {/* Container for FullScreenVideo with fixed height */}
-        <FullScreenVideo />
-      </div>
       <main className="flex-grow container mx-auto px-4 sm:px-8 md:px-16 lg:px-24">
+        <FullScreenVideo />      
         <PageBreaker />
         <div className="px-4 pb-16">
           <ProductList />

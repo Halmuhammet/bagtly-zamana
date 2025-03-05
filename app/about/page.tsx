@@ -5,6 +5,7 @@ import Header from "@/components/Header"
 import Footer from "@/components/Footer"
 import Image from "next/image"
 
+
 const translations = {
   en: {
     title: "About Bagtly Zamana",
@@ -110,19 +111,39 @@ export default function AboutPage() {
         <p className="text-xl mb-8 text-green-600 italic">{translations[language].slogan}</p>
         <div className="prose max-w-none">
           <p className="mb-4">{translations[language].history}</p>
+          <p className="mb-4">{translations[language].mainActivity}</p>
+          <video 
+            controls
+            autoPlay 
+            loop 
+            muted 
+            className="w-full h-auto object-cover rounded mb-6"
+            width={300}
+            height={300}
+          >
+            <source src="/website_visuals/FactoryProductionVideo.mov" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+          <p className="mb-4 text-green-700 font-bold">{translations[language].uniqueTechnology}</p>
+          <p className="mb-4">{translations[language].productionCapacity}</p>
+
           <Image
-                  src= "/website_visuals/advertisement/35f667.jpg"
+                  src= "/website_visuals/more/factory.png"
                   alt="Factroy image"
                   width={300}
                   height={300}
-                  className="w-full h-64 object-cover mb-6 rounded"
+                  className="w-full h-auto object-cover mb-6 rounded"
                 />
-          <p className="mb-4">{translations[language].mainActivity}</p>
-          <p className="mb-4 font-bold">{translations[language].uniqueTechnology}</p>
-          <p className="mb-4">{translations[language].productionCapacity}</p>
-          <p className="mb-4 font-bold">{translations[language].productRange}</p>
+          <p className="mb-4 text-green-700 font-bold">{translations[language].productRange}</p>
           <p className="mb-4">{translations[language].productionProcess}</p>
           <p className="mb-4">{translations[language].marketDemand}</p>
+          <Image 
+            src= "/website_visuals/more/aboutBannerTwo.af5d7778.png"
+            alt="Factroy image"
+            width={300}
+            height={300}
+            className="w-full h-auto object-cover mb-6 rounded"
+          />
           <h2 className="text-2xl font-bold mt-8 mb-4 text-green-700">{translations[language].characteristics}</h2>
           <ul className="list-disc pl-5 mb-4">
             {translations[language].characteristicsList.map((item, index) => (

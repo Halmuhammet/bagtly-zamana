@@ -42,7 +42,7 @@ export default function Footer() {
           <span className="font-semibold">{translations[language].email}:</span> info@bagtlyzamana.com
         </p>
         <p className="mb-2">
-          <span className="font-semibold">{translations[language].phone}:</span> +993 12 576239
+          <span className="font-semibold">{translations[language].phone}:</span> +993 12 596239
         </p>
         <p>
           <span className="font-semibold">{translations[language].address} </span> {translations[language].addressDescription}
